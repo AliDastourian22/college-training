@@ -46,10 +46,56 @@ total_price = price + profit
 print("Profit Amount (10%): Rs.", profit) 
 print("Price After Adding Profit: Rs.", total_price)
 """
+#------week3--------Question1-------------------
+product_prices = []
 
+for i in range(5):
+    price = float(input(f"Enter price of product {i+1}: "))
 
+    product_prices.append(price)
 
+average_price = sum(product_prices)
+print("The average price: Rial", average_price)
 
+large_price=max(product_prices)
+
+if large_price > 1000000:
+    print("this is the biggest price; ", large_price)
+
+sell_prices = []
+for price in product_prices:
+    sel_price = price * 0.1
+    sell_prices.append(sel_price)
+print("Sell Price is : ", sel_price)
+#------week3--------Question2-------------------
+age=[]
+for i in range(10):
+    ages = int(input("Enter age " + str(i+1) + " : "))
+    age.append(ages)
+age.remove(max(age))
+age.remove(max(age))
+age.remove(min(age))
+age.remove(min(age))
+
+average_age = sum(age) / len(age)
+print("The average age is : ", average_age)
+
+oldest_age = max(ages)
+print("The oldest age is : ", oldest_age)
+#------week3--------Question4-------------------
+salaries = []
+
+for i in range(12):
+    salary = float(input("Enter salary for month " + str(i+1) + " : "))
+    salaries.append(salary)
+average_salary = sum(salaries) / 12
+print("The average salary is : ", average_salary)
+
+largest_salary = max(salaries)
+print("The largest salary is : ", largest_salary)
+
+task_payment = largest_salary * 0.15
+print("The total task payment is : ", task_payment)
 
 
 
