@@ -96,10 +96,33 @@ print("The largest salary is : ", largest_salary)
 
 task_payment = largest_salary * 0.15
 print("The total task payment is : ", task_payment)
+#------week4--------Question1-------------------
 
+start = 11
+end = 199
 
+sum_of_odds = 0
 
+for num in range(start, end+1, 2):
 
+    sum_of_odds += num
 
+print("The sum of odd numbers from", start, "to", end, "is:", sum_of_odds)
+#------week4--------Question2-------------------
+n = 10
+result = 0
+
+for i in range(1, n+1):
+    result += i*0.2
+
+print("The sum of numbers from 1 to", n, "multiplied by 0.2 is:", result)
+#------week4--------Question2-------------------
+n = 99
+result = 0
+
+for i in range(1, n+1, 2):
+    result += (-1)**(i-1) * i
+
+print("The sum of alternating positive and negative odd numbers from 1 to", n, "is:", result)
 
 
