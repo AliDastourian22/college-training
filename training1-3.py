@@ -125,4 +125,55 @@ for i in range(1, n+1, 2):
 
 print("The sum of alternating positive and negative odd numbers from 1 to", n, "is:", result)
 
+#------week5--------Question2-------------------
+n = int(input("Enter the value of n: "))
+
+S = 0
+for i in range(2,n+1):
+    S += i**3
+print("Sum =", S)
+#------week5--------Question1-------------------
+
+n = int(input("Enter the value of n: "))
+
+S = 0
+for i in range(1,n+1):
+    S += i/(i+1)
+
+print("Sum =", S)
+#------week5--------Question3-------------------
+upper_limit = 1000
+for num in range(2,upper_limit + 1):
+   isPrime = True
+   for i in range(2,num):
+       if (num%i==0):
+           isPrime = False
+   if isPrime:
+       print(num)
+#------week5--------Question4-------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
